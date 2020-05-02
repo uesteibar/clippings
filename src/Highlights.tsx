@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import Highlight from './Highlight'
-import { Book } from './types'
+import { BookHighlight } from './types'
 
 const Container = styled.div`
   margin: 0 24px;
@@ -10,12 +10,12 @@ const Container = styled.div`
   align-items: center;
 `
 
-const Highlights = ({books}: {books: Book[]}) => {
+const Highlights = ({highlights}: {highlights: BookHighlight[]}) => {
   console.log(process.env.PUBLIC_URL)
 
   return (
     <Container>
-      {books.flatMap(({highlights}, i) => highlights.map((h, j) => <Highlight key={`${i}-${j}`} highlight={h} />))}
+      {highlights.map((h, j) => <Highlight key={`${h.title}-${j}`} highlight={h} />)}
     </Container>
   );
 }

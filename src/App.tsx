@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Heading from './Heading'
 import Highlights from './Highlights'
 import { load } from './data/highlights'
-import { Book } from './types'
+import { BookHighlight } from './types'
 
 const goToAnchor = () => {
   const id = window.location.hash.substr(1)
@@ -13,24 +13,24 @@ const goToAnchor = () => {
 }
 
 const App = () => {
-  const [books, setBooks] = useState<Book[]>([])
+  const [highlights, setHighlights] = useState<BookHighlight[]>([])
 
   useEffect(() => {
     const fetch = async () => {
       const books = await load()
 
-      setBooks(books)
+      setHighlights(books.flatMap(({highlights}) => highlights))
     }
 
     fetch()
   }, [])
 
-  useEffect(goToAnchor, [books])
+  useEffect(goToAnchor, [highlights])
 
   return (
     <div>
       <Heading />
-      <Highlights books={books} />
+      <Highlights highlights={highlights} />
     </div>
   );
 }
