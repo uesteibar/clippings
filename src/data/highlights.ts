@@ -9,7 +9,7 @@ export type BooksIndex = {
 const parseHighlight = (text: string): BookHighlight | null => {
   const lines = text.trim().split("\n");
   const title = lines[0].trim();
-  const rest = lines.slice(2) && lines.slice(2).join("\n").trim();
+  const content = lines.slice(2) && lines.slice(2).join("\n").trim();
 
   if (title.length === 0) {
     return null;
@@ -18,37 +18,28 @@ const parseHighlight = (text: string): BookHighlight | null => {
   return {
     id: hash({ title, text }),
     title: title,
-    text: rest,
+    text: content,
   };
 };
 
-const groupHighlights = (items: BookHighlight[]): Book[] => {
-  var grouped: BooksIndex = {};
+const groupHighlights = (highlights: BookHighlight[]): Book[] => {
+  const grouped: BooksIndex = highlights.reduce(
+    (index: BooksIndex, highlight: BookHighlight) => {
+      index[highlight.title] = (index[highlight.title] || []).concat(highlight);
 
-  items.forEach(function (item) {
-    var title = item.title;
-    var titleHighlights: BookHighlight[];
+      return index;
+    },
+    {}
+  );
 
-    if (grouped[title] === undefined) {
-      titleHighlights = [];
-      grouped[title] = titleHighlights;
-    } else {
-      titleHighlights = grouped[title];
+  return Object.entries(grouped).map(
+    ([title, highlights]: [string, BookHighlight[]]) => {
+      return {
+        title: title,
+        highlights: highlights,
+      };
     }
-
-    titleHighlights.push(item);
-  });
-
-  var collection: Book[] = [];
-  for (var title in grouped) {
-    var highlights = grouped[title];
-    collection.push({
-      title: title,
-      highlights: highlights,
-    });
-  }
-
-  return collection;
+  );
 };
 
 const parse = (text: string): Book[] => {
