@@ -12,7 +12,7 @@ const Background = styled.div`
   position: relative;
   background: ${color};
   color: #efefef;
-  height: 80vh;
+  height: 60vh;
 
   ::after {
     content: '';

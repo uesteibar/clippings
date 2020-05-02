@@ -1,37 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import Heading from './Heading'
-import Highlights from './Highlights'
-import { load } from './data/highlights'
-import { BookHighlight } from './types'
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Main from './Main'
+import RandomHighlight from './RandomHighlight'
+import ShowHighlight from './ShowHighlight'
+import Navigation from './Navigation'
 
-const goToAnchor = () => {
-  const id = window.location.hash.substr(1)
-  if (id) {
-    const anchor = document.getElementById(id);
-    if(anchor) anchor.scrollIntoView();
-  }
-}
 
 const App = () => {
-  const [highlights, setHighlights] = useState<BookHighlight[]>([])
-
-  useEffect(() => {
-    const fetch = async () => {
-      const books = await load()
-
-      setHighlights(books.flatMap(({highlights}) => highlights))
-    }
-
-    fetch()
-  }, [])
-
-  useEffect(goToAnchor, [highlights])
-
   return (
-    <div>
-      <Heading />
-      <Highlights highlights={highlights} />
-    </div>
+    <Router>
+      <Navigation />
+      <Switch>
+        <Route path="/random">
+          <RandomHighlight />
+        </Route>
+        <Route path="/:highlightId">
+          <ShowHighlight />
+        </Route>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

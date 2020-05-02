@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { BookHighlight } from './types'
 
 const Container = styled.div`
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +23,7 @@ const Footer = styled.div`
   justify-content: space-between;
 `;
 
-const Share = styled.a`
+const Share = styled(Link)`
   text-decoration: none;
   flex: 1;
 `;
@@ -33,13 +34,13 @@ const Book = styled.div`
   flex: 1;
 `;
 
-const Highlight = ({highlight}: {highlight: BookHighlight}) => {
+const Highlight = ({highlight, className}: {highlight: BookHighlight, className?: string}) => {
   console.log(highlight.text)
   return (
-    <Container id={highlight.id}>
+    <Container id={highlight.id} className={className}>
       <Quote>{highlight.text}</Quote>
       <Footer>
-        <Share href={`#${highlight.id}`}>Share</Share>
+        <Share to={`/${highlight.id}`}>Share</Share>
         <Book>{highlight.title}</Book>
       </Footer>
     </Container>

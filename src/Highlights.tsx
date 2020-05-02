@@ -10,12 +10,16 @@ const Container = styled.div`
   align-items: center;
 `
 
+const HighlightWrapper = styled(Highlight)`
+  margin: 10vh 0;
+`
+
 const Highlights = ({highlights}: {highlights: BookHighlight[]}) => {
   console.log(process.env.PUBLIC_URL)
 
   return (
     <Container>
-      {highlights.map((h, j) => <Highlight key={`${h.title}-${j}`} highlight={h} />)}
+      {highlights.map((h, j) => <HighlightWrapper key={`${h.title}-${j}`} highlight={h} />)}
     </Container>
   );
 }
