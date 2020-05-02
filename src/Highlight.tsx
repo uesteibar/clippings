@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Quote = styled.p`
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic;
   text-align: justify;
 `
@@ -28,7 +28,7 @@ const Share = styled.a`
 `;
 
 const Book = styled.div`
-  font-size: 14px;
+  font-size: 16px;
   text-align: right;
   flex: 1;
 `;

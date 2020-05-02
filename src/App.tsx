@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Heading from './Heading'
 import Highlights from './Highlights'
 import { load } from './data/highlights'
 import { Book } from './types'
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <div>
+      <Heading />
       <Highlights books={books} />
     </div>
   );
