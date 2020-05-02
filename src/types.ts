@@ -1,6 +1,6 @@
 export type BookHighlight = {
+  id: string,
   title: string;
-  metadata: string;
   text: string;
 };
 

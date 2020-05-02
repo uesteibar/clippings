@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import Highlight from './Highlight'
+import Highlights from './Highlights'
 import { load } from './data/highlights'
 import { Book } from './types'
 
-function App() {
+const goToAnchor = () => {
+  const id = window.location.hash.substr(1)
+  if (id) {
+    const anchor = document.getElementById(id);
+    if(anchor) anchor.scrollIntoView();
+  }
+}
+
+const App = () => {
   const [books, setBooks] = useState<Book[]>([])
 
   useEffect(() => {
@@ -16,9 +24,11 @@ function App() {
     fetch()
   }, [])
 
+  useEffect(goToAnchor, [books])
+
   return (
     <div>
-      {books.flatMap(({highlights}, i) => highlights.map((h, j) => <Highlight key={`${i}-${j}`} highlight={h} />))}
+      <Highlights books={books} />
     </div>
   );
 }

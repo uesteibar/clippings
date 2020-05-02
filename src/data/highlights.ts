@@ -1,3 +1,4 @@
+import hash from "object-hash";
 import * as myClippings from "./My Clippings.txt";
 import { Book, BookHighlight } from "../types";
 
@@ -6,19 +7,17 @@ export type BooksIndex = {
 };
 
 const parseHighlight = (text: string): BookHighlight | null => {
-  var trimmed = text.trim();
-  var lines = trimmed.split("\n");
-  var title = lines[0].trim();
-  var metadata = lines[1];
-  var rest = lines.slice(2) && lines.slice(2).join("\n").trim();
+  const lines = text.trim().split("\n");
+  const title = lines[0].trim();
+  const rest = lines.slice(2) && lines.slice(2).join("\n").trim();
 
   if (title.length === 0) {
     return null;
   }
 
   return {
+    id: hash({ title, text }),
     title: title,
-    metadata: metadata,
     text: rest,
   };
 };
