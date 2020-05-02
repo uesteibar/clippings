@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import Highlight from './Highlight'
+import { load } from './data/highlights'
+import { Book } from './types'
 
 function App() {
+  const [books, setBooks] = useState<Book[]>([])
+
+  useEffect(() => {
+    const fetch = async () => {
+      const books = await load()
+
+      setBooks(books)
+    }
+
+    fetch()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {books.flatMap(({highlights}, i) => highlights.map((h, j) => <Highlight key={`${i}-${j}`} highlight={h} />))}
     </div>
   );
 }
