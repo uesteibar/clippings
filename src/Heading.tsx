@@ -58,7 +58,7 @@ const Heading = () => (
         <span role="img" aria-label="book">&nbsp;📖</span>
       </Title>
       <SubTitle>
-        This is where I store the stuff I highlights when reading on my Kindle.
+        This is where I store the things I highlight when reading on my Kindle.
         Some of it will be in Spanish, some in English, and you might even encounter some Basque.
       </SubTitle>
     </Container>
