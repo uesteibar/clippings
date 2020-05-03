@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Shelf from './Shelf'
 
 const color = "#1b1b1b"
 
@@ -25,11 +26,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-`
-
-const Title = styled.h1`
-  font-size: 72px;
-  font-weight: normal;
 `
 
 const SubTitle = styled.h2`
@@ -65,9 +61,7 @@ const Random = styled(Link).attrs({
 const Heading = () => (
   <Background>
     <Container>
-      <Title>
-        <span role="img" aria-label="book">&nbsp;📖</span>
-      </Title>
+      <Shelf />
       <SubTitle>
         Most of the times, I read on my <strong>Kindle™</strong>, and <strong>I highlight a lot of stuff</strong>,
         so I figured I could share them with you.
