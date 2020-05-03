@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { BookHighlight } from './types'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const Container = styled.div`
   min-height: 80vh;
@@ -23,15 +25,16 @@ const Footer = styled.div`
   justify-content: space-between;
 `;
 
-const Share = styled(Link)`
+const FooterLink = styled(Link)`
   text-decoration: none;
   flex: 1;
-`;
+  color: black;
+`
 
 const Book = styled.div`
   font-size: 16px;
   text-align: right;
-  flex: 1;
+  flex: 2;
 `;
 
 const Highlight = ({highlight, className}: {highlight: BookHighlight, className?: string}) => {
@@ -40,7 +43,7 @@ const Highlight = ({highlight, className}: {highlight: BookHighlight, className?
     <Container id={highlight.id} className={className}>
       <Quote>{highlight.text}</Quote>
       <Footer>
-        <Share to={`/${highlight.id}`}>Share</Share>
+        <FooterLink title="open" to={`/${highlight.id}`}><FontAwesomeIcon icon={faEye} /></FooterLink>
         <Book>{highlight.title}</Book>
       </Footer>
     </Container>

@@ -42,11 +42,13 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-size: 72px;
+  font-weight: normal;
 `
 
 const SubTitle = styled.h2`
   font-size: 24px;
   text-align: justify;
+  font-weight: normal;
 `
 
 const Heading = () => (
