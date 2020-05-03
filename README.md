@@ -2,7 +2,7 @@
 
 ### Running your own
 
-Replace `src/data/My Clippings.txt` with your own `My Clippings.txt` file, which you can find
+Replace `data/My Clippings.txt` with your own `My Clippings.txt` file, which you can find
 in your kindle device, at `/documents/My Clippings.txt`.
 
 Then

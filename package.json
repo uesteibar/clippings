@@ -30,14 +30,18 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "prestart": "yarn prepare",
     "start": "PUBLIC_URL=http://localhost:3000 react-scripts start",
+    "prebuild": "yarn prepare",
     "build": "PUBLIC_URL=http://localhost:5000 react-scripts build",
+    "prebuild:prod": "yarn prepare",
     "build:prod": "PUBLIC_URL=https://reading-notes.uesteibar.com react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.ts",
     "predeploy": "yarn build:prod",
-    "deploy": "scp -r ./build/* root@138.68.177.168:/var/www/clippings/"
+    "deploy": "scp -r ./build/* root@138.68.177.168:/var/www/clippings/",
+    "prepare": "node ./scripts/prepare.js"
   },
   "eslintConfig": {
     "extends": "react-app"

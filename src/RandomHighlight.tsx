@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components'
 import Highlight from './Highlight'
-import { load } from './data/highlights'
+import { getHighlights } from './data/highlights'
 import { BookHighlight } from './types'
 
 const Container = styled.div`
@@ -16,15 +16,7 @@ const sample = (highlights: BookHighlight[]) => highlights[Math.floor(Math.rando
 const Main = () => {
   const [highlight, setHighlight] = useState<BookHighlight | null>(null)
 
-  useEffect(() => {
-    const fetch = async () => {
-      const books = await load()
-
-      setHighlight(sample(books.flatMap(({highlights}) => highlights)))
-    }
-
-    fetch()
-  }, [])
+  useEffect(() => { setHighlight(sample(getHighlights())) }, [])
 
   if (!highlight) return null
 
