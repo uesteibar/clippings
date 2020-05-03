@@ -14,6 +14,7 @@ const Container = styled.div`
 export const Refresh = styled.span.attrs({
   onClick: () => window.location.reload()
 })`
+  user-select: none;
   cursor: pointer;
   color: #1b1b1b;
   transition: background 0.5s ease;
