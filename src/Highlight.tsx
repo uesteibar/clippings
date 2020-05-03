@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { BookHighlight } from './types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faShareAlt } from '@fortawesome/free-solid-svg-icons'
+import CopyToClipboard from './CopyToClipboard'
 
 const Container = styled.div`
   min-height: 80vh;
@@ -25,10 +26,14 @@ const Footer = styled.div`
   justify-content: space-between;
 `;
 
-const FooterLink = styled(Link)`
-  text-decoration: none;
+const FooterAction = styled.span`
   flex: 1;
+`
+const FooterIcon = styled(FontAwesomeIcon)`
   color: black;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 16px;
 `
 
 const Book = styled.div`
@@ -43,7 +48,14 @@ const Highlight = ({highlight, className}: {highlight: BookHighlight, className?
     <Container id={highlight.id} className={className}>
       <Quote>{highlight.text}</Quote>
       <Footer>
-        <FooterLink title="open" to={`/${highlight.id}`}><FontAwesomeIcon icon={faEye} /></FooterLink>
+        <FooterAction title="open" >
+          <Link to={`/${highlight.id}`}>
+            <FooterIcon icon={faEye} />
+          </Link>
+          <CopyToClipboard text={`${process.env.PUBLIC_URL}/${highlight.id}`}>
+            <FooterIcon title="share" icon={faShareAlt} />
+          </CopyToClipboard>
+        </FooterAction>
         <Book>{highlight.title}</Book>
       </Footer>
     </Container>
