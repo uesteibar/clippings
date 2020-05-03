@@ -13,6 +13,11 @@ const Container = styled.div`
   justify-content: center;
   padding: 24px;
   max-width: 800px;
+
+  @media all and (max-width: 800px) {
+    max-width: 90%;
+    overflow: scroll;
+  }
 `;
 
 const Quote = styled.p`
@@ -20,6 +25,10 @@ const Quote = styled.p`
   font-style: italic;
   text-align: justify;
   margin-bottom: 24px;
+
+  @media all and (max-width: 800px) {
+    font-size: 20px;
+  }
 `
 
 const Footer = styled.div`
