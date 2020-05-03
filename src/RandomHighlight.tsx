@@ -11,9 +11,10 @@ const Container = styled.div`
   align-items: center;
 `
 
-export const Refresh = styled.span.attrs({
+export const Refresh = styled.button.attrs({
   onClick: () => window.location.reload()
 })`
+  margin-bottom: 24px;
   user-select: none;
   cursor: pointer;
   color: #1b1b1b;
