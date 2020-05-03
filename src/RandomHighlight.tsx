@@ -11,6 +11,24 @@ const Container = styled.div`
   align-items: center;
 `
 
+export const Refresh = styled.span.attrs({
+  onClick: () => window.location.reload()
+})`
+  cursor: pointer;
+  color: #1b1b1b;
+  transition: background 0.5s ease;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid rgba(27, 27, 27, 0.5);
+  border-radius: 5px;
+  padding: 8px;
+
+  &:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+  }
+`
+
 const sample = (highlights: BookHighlight[]) => highlights[Math.floor(Math.random() * highlights.length)]
 
 const Main = () => {
@@ -23,6 +41,9 @@ const Main = () => {
   return (
     <Container>
       <Highlight highlight={highlight} />
+      <Refresh>
+          Click here to see another random highlight
+      </Refresh>
     </Container>
   );
 }
