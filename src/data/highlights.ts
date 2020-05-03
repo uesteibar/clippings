@@ -6,26 +6,36 @@ export type BooksIndex = {
   [title: string]: BookHighlight[];
 };
 
+const titleAndAuthor = (title: string): [string, string] => {
+  const authorParts = title.match(/\(([^)]+)\)+$/) || [];
+  const author = authorParts[1];
+  if (author) title = title.replace(authorParts[0], "");
+
+  return [title, author];
+};
+
 const parseHighlight = (text: string): BookHighlight | null => {
   const lines = text.trim().split("\n");
-  const title = lines[0].trim();
-  const content = lines.slice(2) && lines.slice(2).join("\n").trim();
+  const [title, author] = titleAndAuthor(lines[0].trim());
+  if (title.length === 0) return null;
 
-  if (title.length === 0) {
-    return null;
-  }
+  const page = parseInt((lines[1].match(/page \d+/g) || [""])[0].split(" ")[0]);
+  const content = lines.slice(2) && lines.slice(2).join("\n").trim();
 
   return {
     id: hash({ title, text }),
-    title: title,
+    book: { title, author, highlights: [] },
     text: content,
+    page: page,
   };
 };
 
 const groupHighlights = (highlights: BookHighlight[]): Book[] => {
   const grouped: BooksIndex = highlights.reduce(
     (index: BooksIndex, highlight: BookHighlight) => {
-      index[highlight.title] = (index[highlight.title] || []).concat(highlight);
+      index[highlight.book.title] = (index[highlight.book.title] || []).concat(
+        highlight
+      );
 
       return index;
     },
@@ -36,6 +46,7 @@ const groupHighlights = (highlights: BookHighlight[]): Book[] => {
     ([title, highlights]: [string, BookHighlight[]]) => {
       return {
         title: title,
+        author: highlights[0].book.author,
         highlights: highlights,
       };
     }

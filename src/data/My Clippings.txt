@@ -153,132 +153,132 @@ Sapiens. De animales a dioses (Spanish Edition) (Harari, Yuval Noah)
 
 podemos felicitarnos por los logros sin precedentes de los sapiens modernos únicamente si ignoramos por completo la suerte de todos los demás animales. Gran parte de la riqueza material de la que nos jactamos que nos aísla de la enfermedad y de la hambruna se ha acumulado a expensas de monos de laboratorio, vacas lecheras y pollos en cintas transportadoras.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 74-77 | Added on Thursday, March 21, 2019 5:38:36 PM
 
 Issue tracker gardening A common problem that results in clutter in the issue tracker is irreproducibility. Users may be trying to show a legit issue with your project, but without enough information to reproduce it, which makes it hard to decide if it is indeed a problem with your project. In this case, ask them to provide more information. You might link toyourbugreportneedsmore.info for a curated, external explanation around reproducibility.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 74-77 | Added on Thursday, March 21, 2019 5:38:57 PM
 
 A common problem that results in clutter in the issue tracker is irreproducibility. Users may be trying to show a legit issue with your project, but without enough information to reproduce it, which makes it hard to decide if it is indeed a problem with your project. In this case, ask them to provide more information. You might link toyourbugreportneedsmore.info for a curated, external explanation around reproducibility.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 87-89 | Added on Thursday, March 21, 2019 5:41:12 PM
 
 To an issue with an unclear description another sometimes helpful route to take is to ask the requester to put together some quick code to further iterate on their issue (a spike). If the requester implements even part of the needed feature you can now have a more valuable discussion over a possible implementation,
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 100-105 | Added on Thursday, March 21, 2019 5:44:52 PM
 
 The bike shed effect(also called “Parkinson’s law of triviality”) states that groups give disproportionate weight to trivial issues. For example, a committee whose job is to approve plans for a nuclear power plant spends the majority of its time on relatively unimportant but easy-to-grasp issues, such as what materials to use for the staff bike shed, while neglecting the less trivial proposed design of the nuclear power plant itself, which is far more important but also far more difficult and involved to criticize constructively. When you see more activity than usual in a discussion over a superficial matter (according to a threshold you define), take one decision (even if arbitrary) and call it resolved. You will save everybody’s time.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 112-116 | Added on Thursday, March 21, 2019 5:46:19 PM
 
 Fairness bias describes our tendency to seek balance. If a supplier keeps an open line of communication with an unhappy customer about a faulty product, the customer will respond more favorably regardless of the outcome. The need to be heard takes precedence over the need for the product working correctly. Fairness bias can be applied to code reviews. Framing an idea as a question instead of as an assertion makes the contributor feel heard and valued. If we are the authors of the code being reviewed, we can harness this effect before the conversation is even started, by explaining the rationale behind our work beforehand.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 117-121 | Added on Thursday, March 21, 2019 5:47:02 PM
 
 Loss aversion describes people’s tendency to strongly prefer avoiding losses to acquiring gains. More concretely, giving you 5 dollars won’t make you extra happy but if $5 are taken from you, you will get upset. Loss aversion relates with saying “no” to a patch. As a reviewer, giving a clear explanation of the reasons for your rejection helps avoiding a longer discussion on whether the patch should or should not be merged, helping authors see more objectively the value of their contributions. As a contributor, remember that if you were the reviewer or another external party, you would probably be a bit more skeptical than you currently are about the value of your patch.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 122-124 | Added on Thursday, March 21, 2019 5:47:45 PM
 
 the positive message you wrote may be assumed to be neutral, and what seemed indifferent to you can be read as hostile. You can avoid this by using positive language instead of neutral. Written discussions have less bandwidth and need to include more context than conversations over the phone or in person.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 134-135 | Added on Thursday, March 21, 2019 5:48:53 PM
 
 treat all your contributors as if they are the most valuable resource. They will respond by becoming your most valuable resource,
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 135-140 | Added on Thursday, March 21, 2019 5:49:36 PM
 
 while giving feedback it’s good to: • Start with an appreciation of the work or comment. • Phrase ideas as questions when you are not sure that your feedback shows a clear step forward. • Be explicit. Online discussions have less bandwidth than in person and need more context. • Try to respond to every question and comment. • If you disagree strongly, consider giving it a moment before responding. • Don’t assume the audience shares your experience or context. Avoid words like “basically”, “simply”, “clearly”, etc. • Review is of the code, not people. Keep this in mind as a contributor too. Remember: every person knows something you don’t yet know.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 151-152 | Added on Thursday, March 21, 2019 5:50:45 PM
 
 In open source nobody owes anything to anyone. If anything, users owe maintainers gratitude for publishing something that was and is useful to them.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 161-162 | Added on Thursday, March 21, 2019 5:52:42 PM
 
 Keep commits cohesive. • Keep commits as small as possible.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 164-170 | Added on Thursday, March 21, 2019 5:55:12 PM
 
 if a patch fixes a bug and optimizes the performance of a feature, split it into two separate commits. The implementation of a feature and the corresponding tests belong in the same commit, which should not be split. A small and cohesive commit is easier to review and grasp. Git’s annotateandblame commands will be more clear about the origin and reason behind each line of the entire source code. If you find the need to revert the changeset, it is possible to revertthat single commit in an instant, and the project will exist as if that change wouldn’t have existed in the first place. The same applies if you have to backport (in git terms,cherry-pick) a fix to previous releases. Always keep commits as small and cohesive as possible and ask your contributors to do the same, and the project will be easier to maintain.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 183-184 | Added on Thursday, March 21, 2019 5:58:32 PM
 
 A good commit message answers three questions: • Why is this change necessary? • How does it address the issue? • What effects does the patch have? Note the absence of a “what is” type of question. We have the git log for that already;
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 203-207 | Added on Thursday, March 21, 2019 11:45:20 PM
 
 Some people see value in keeping the evolution of the code unchanged, commit after commit, having the whole messy (but complete) changeset. Assuming each commit includes an explanation of the rationale behind of it, then history is complete, but that doesn’t mean clear. For a programmer at work, it’s more useful to understand what the code does and why, than a given contributor’s development and learning process. If the author takes the time to send a curated history rather than the raw version, it’s easier for everyone in the team to understand this change.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 214-217 | Added on Thursday, March 21, 2019 11:47:08 PM
 
 It is better to squash commits together right before merging and not earlier. That way, discussion and follow-up commits addressing the feedback stay synchronized, anyone can see how the feature came up to be across the different revisions, and the reviewer always knows what was addressed and what not. Be nice to people, floss every day, and keep your git history clean.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 217-218 | Added on Thursday, March 21, 2019 11:47:29 PM
 
 Wikipedia defines legacy code as source code inherited from someone else and source code inherited from an older version of the software. This means any code that lands into master becomes legacy code.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 220-220 | Added on Thursday, March 21, 2019 11:47:57 PM
 
 Code is a liability and solving problems with as little code as possible is almost always a good decision.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 224-227 | Added on Thursday, March 21, 2019 11:49:04 PM
 
 To make sure merging a given patch is a good idea, you can ask the following questions: • Will you or your team want to maintain it? • Will the author be reachable for support, answer questions that the community will have around that feature, or fix related bugs? • Will you like maintaining that addition? • Do you see it bringing in more value than cost? Say “no” when you believe the addition will not be helpful to the project, the team maintaining it, and by extension, its users.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 239-239 | Added on Thursday, March 21, 2019 11:50:26 PM
 
 small discrepancies give the impression of individual developers working without purpose rather than a team working together toward a common goal.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 239-240 | Added on Thursday, March 21, 2019 11:50:39 PM
 
 Lack of attention to detail conveys an attitude that might permeate other aspects of a project like readability, dependency management, and testing.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 240-241 | Added on Thursday, March 21, 2019 11:50:54 PM
 
 An inconsistent style is a superficial but notable sign that people don’t care much about quality.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 246-247 | Added on Thursday, March 21, 2019 11:51:59 PM
 
 If you write ugly code, anyone who intends to fix a bug or add a feature will not enjoy their work and likely avoid it next time.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 253-255 | Added on Thursday, March 21, 2019 11:53:03 PM
 
 You can write the coding standard for your project or adopt an existing one, and follow it. Any guideline will be useful, as any one of them will handle a myriad of little decisions for you and your team so you don’t need to think about them too. In many cases it doesn’t matter what decisions these are; the point is to avoid having to discuss them frequently.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 264-264 | Added on Thursday, March 21, 2019 11:54:28 PM
 
 lack of process is what gets us to new discoveries. Not everything has to feel cookie cut, particularly for explorations.
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 399-402 | Added on Friday, March 22, 2019 12:09:45 AM
 
 In any piece of documentation in your project there shouldn’t be words like obviously, basically, simply, easy, etc. In the case where it’s not obvious they might trigger feelings of vulnerability (“why didn’t I already know this?”). And in the case where it was indeed a known fact, the word doesn’t add any information,
 ==========
-maintaining-open-source-projects (uesteibar@gmail.com)
+maintaining-open-source-projects
 - Your Highlight on Location 105-106 | Added on Sunday, March 24, 2019 12:59:23 AM
 
 Godwin’s law states that as an online discussion grows longer (regardless of topic or scope), sooner or later someone will compare someone or something to Hitler or Nazism.

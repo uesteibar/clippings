@@ -19,6 +19,7 @@ const Quote = styled.p`
   font-size: 24px;
   font-style: italic;
   text-align: justify;
+  margin-bottom: 24px;
 `
 
 const Footer = styled.div`
@@ -33,17 +34,32 @@ const FooterIcon = styled(FontAwesomeIcon)`
   color: black;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 16px;
+  margin-right: 32px;
 `
 
-const Book = styled.div`
-  font-size: 16px;
-  text-align: right;
-  flex: 2;
+const BookTitle = styled.span`
+  font-size: 18px;
+  margin-bottom: 8px;
 `;
 
+const BookAuthor = styled.span`
+  font-size: 13px;
+  font-weight: bold;
+`
+
+const Book = styled(({book, className}) => (
+  <div className={className}>
+    <BookTitle>{book.title}</BookTitle>
+    { book.author && <div>by <BookAuthor>{book.author}</BookAuthor></div> }
+  </div>
+))`
+  text-align: right;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+`
+
 const Highlight = ({highlight, className}: {highlight: BookHighlight, className?: string}) => {
-  console.log(highlight.text)
   return (
     <Container id={highlight.id} className={className}>
       <Quote>{highlight.text}</Quote>
@@ -56,7 +72,7 @@ const Highlight = ({highlight, className}: {highlight: BookHighlight, className?
             <FooterIcon title="share" icon={faShareAlt} />
           </CopyToClipboard>
         </FooterAction>
-        <Book>{highlight.title}</Book>
+        <Book book={highlight.book} />
       </Footer>
     </Container>
   );
