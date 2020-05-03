@@ -13,20 +13,6 @@ const Background = styled.div`
   background: ${color};
   color: #efefef;
   height: 60vh;
-
-  ::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: -0%;
-    top: 100%;
-    z-index: 10;
-    display: block;
-    height: 65px;
-    background-size: 65px 100%;
-    background-image: linear-gradient(135deg, ${color} 25%, transparent 25%), linear-gradient(225deg, ${color} 25%, transparent 25%);
-    background-position: 0 0;
-  }
 `
 
 const Container = styled.div`
@@ -49,14 +35,16 @@ const SubTitle = styled.h2`
   font-size: 24px;
   text-align: justify;
   font-weight: normal;
+
+  @media all and (max-width: 800px) {
+    font-size: 20px;
+  }
 `
 
 const Heading = () => (
   <Background>
     <Container>
       <Title>
-        <span role="img" aria-label="note">📝</span>
-        <span role="img" aria-label="nerd face">&nbsp;🤓</span>
         <span role="img" aria-label="book">&nbsp;📖</span>
       </Title>
       <SubTitle>

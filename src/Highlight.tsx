@@ -22,7 +22,6 @@ const Container = styled.div`
 
 const Quote = styled.p`
   font-size: 24px;
-  font-style: italic;
   text-align: justify;
   margin-bottom: 24px;
 
