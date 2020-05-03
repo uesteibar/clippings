@@ -7,7 +7,6 @@ import {
 import Main from './Main'
 import RandomHighlight from './RandomHighlight'
 import ShowHighlight from './ShowHighlight'
-import Navigation from './Navigation'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,7 +16,6 @@ toast.configure()
 const App = () => {
   return (
     <Router>
-      <Navigation />
       <Switch>
         <Route path="/random">
           <RandomHighlight />
