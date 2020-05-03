@@ -25,6 +25,8 @@ const Quote = styled.p`
 const Footer = styled.div`
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #b2b2b2;
+  padding-top: 16px;
 `;
 
 const FooterAction = styled.span`
@@ -35,6 +37,7 @@ const FooterIcon = styled(FontAwesomeIcon)`
   text-decoration: none;
   cursor: pointer;
   margin-right: 32px;
+  color: #3f3f3f;
 `
 
 const BookTitle = styled.span`
@@ -57,6 +60,7 @@ const Book = styled(({book, className}) => (
   flex: 2;
   display: flex;
   flex-direction: column;
+  color: #3f3f3f;
 `
 
 const Highlight = ({highlight, className}: {highlight: BookHighlight, className?: string}) => {
