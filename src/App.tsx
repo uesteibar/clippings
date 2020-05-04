@@ -7,6 +7,7 @@ import {
 import Main from './Main'
 import RandomHighlight from './RandomHighlight'
 import ShowHighlight from './ShowHighlight'
+import Book from './Book'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -19,6 +20,9 @@ const App = () => {
       <Switch>
         <Route path="/random">
           <RandomHighlight />
+        </Route>
+        <Route path="/book/:bookId">
+          <Book />
         </Route>
         <Route path="/:highlightId">
           <ShowHighlight />

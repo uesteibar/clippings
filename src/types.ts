@@ -6,6 +6,7 @@ export type BookHighlight = {
 };
 
 export type Book = {
+  id: string;
   title: string;
   author?: string;
   highlights: BookHighlight[];

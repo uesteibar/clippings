@@ -17,6 +17,8 @@ const titleAndAuthor = (title) => {
   return [title, author];
 };
 
+const book = attrs => ({ ...attrs, id: hash({title: attrs.title, author: attrs.author}) })
+
 const parseHighlight = (text) => {
   const lines = text.trim().split("\n");
   const [title, author] = titleAndAuthor(lines[0].trim());
@@ -27,7 +29,7 @@ const parseHighlight = (text) => {
 
   return {
     id: hash({ title, text }),
-    book: { title, author, highlights: [] },
+    book: book({ title, author, highlights: [] }),
     text: content,
     page: page,
     language: language(content),
@@ -48,11 +50,11 @@ const groupHighlights = (highlights) => {
 
   return Object.entries(grouped).map(
     ([title, highlights]) => {
-      return {
+      return book({
         title: title,
         author: highlights[0].book.author,
         highlights: highlights,
-      };
+      });
     }
   );
 };

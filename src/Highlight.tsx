@@ -41,27 +41,31 @@ const FooterAction = styled.span`
   flex: 1;
 `
 const FooterIcon = styled(FontAwesomeIcon)`
-  color: black;
   text-decoration: none;
   cursor: pointer;
   margin-right: 32px;
   color: #3f3f3f;
 `
 
-const BookTitle = styled.span`
+const BookTitle = styled(Link)`
   font-size: 18px;
   margin-bottom: 8px;
+  color: #3f3f3f;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const BookAuthor = styled.span`
   font-size: 13px;
-  font-weight: bold;
 `
 
 const Book = styled(({book, className}) => (
   <div className={className}>
-    <BookTitle>{book.title}</BookTitle>
-    { book.author && <div>by <BookAuthor>{book.author}</BookAuthor></div> }
+    <BookTitle to={`/book/${book.id}`}>{book.title}</BookTitle>
+    { book.author && <BookAuthor>by <strong>{book.author}</strong></BookAuthor> }
   </div>
 ))`
   text-align: right;
