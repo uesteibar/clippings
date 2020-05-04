@@ -18,6 +18,7 @@ export const Refresh = styled.button.attrs({
   user-select: none;
   cursor: pointer;
   color: #1b1b1b;
+  background: none;
   transition: background 0.5s ease;
   text-decoration: none;
   font-size: 16px;
