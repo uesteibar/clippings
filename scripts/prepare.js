@@ -1,5 +1,13 @@
 const hash = require('object-hash')
 const fs = require('fs')
+const franc = require('franc')
+
+const languages = {
+  eng: "en",
+  spa: "es",
+}
+
+const language = text => languages[franc(text)] || "unknown"
 
 const titleAndAuthor = (title) => {
   const authorParts = title.match(/\(([^)]+)\)+$/) || [];
@@ -22,6 +30,7 @@ const parseHighlight = (text) => {
     book: { title, author, highlights: [] },
     text: content,
     page: page,
+    language: language(content),
   };
 };
 
@@ -60,4 +69,4 @@ const parse = (text) => {
 
 const raw = fs.readFileSync("./data/My Clippings.txt", "utf8")
 const books = parse(raw)
-fs.writeFileSync("./src/data/highlights.json", JSON.stringify(books), "utf8")
+fs.writeFileSync("./src/data/highlights.json", JSON.stringify(books, null, 1), "utf8")

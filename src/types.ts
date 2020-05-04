@@ -1,6 +1,7 @@
 export type BookHighlight = {
   id: string,
   text: string;
+  language: string;
   book: Book;
 };
 
