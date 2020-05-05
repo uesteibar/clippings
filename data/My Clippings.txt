@@ -979,11 +979,6 @@ Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
 unjustified attachment to type. It is not the class of the object that’s important, it’s the message you plan to send to it.
 ==========
 Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
-- Your Highlight on Location 2855-2855 | Added on Thursday, July 4, 2019 12:33:11 AM
-
-situation by leaving the code better than you found
-==========
-Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
 - Your Highlight on Location 2853-2855 | Added on Thursday, July 4, 2019 12:33:17 AM
 
 When working on an existing application, you may find yourself under severe constraints about how much you can actually change. If prevented from achieving perfection, your goals should switch to improving the overall situation by leaving the code better than you found it.
@@ -1012,11 +1007,6 @@ Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
 - Your Highlight on Location 3845-3848 | Added on Wednesday, July 10, 2019 12:19:28 AM
 
 A class that, if changed, will cause changes to ripple through the application will be under enormous pressure to never change. Ever. Under any circumstances whatsoever. Your application may be permanently handicapped by your reluctance to pay the price required to make a change to this class.
-==========
-Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
-- Your Highlight on Location 3901-3903 | Added on Saturday, July 13, 2019 2:29:40 AM
-
-Design, therefore, must be concerned with the messages that pass between objects. It deals not only with what objects know (their responsibilities) and who they know (their dependencies) but also with how they talk to one another.  The
 ==========
 Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
 - Your Highlight on Location 3901-3904 | Added on Saturday, July 13, 2019 2:30:04 AM
@@ -1127,11 +1117,6 @@ Vue.js in Action (Erik Hanchett, Ben Listwon)
 - Your Highlight on Location 876-877 | Added on Friday, July 19, 2019 7:01:16 PM
 
 If the CSS selector we provide resolves to more than one DOM element, Vue will mount the application to the first element that matches the selector.
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 900-901 | Added on Friday, July 19, 2019 7:02:23 PM
-
-[Vue warn]: Property or method "propertyname" is not defined . . . lets you know something wasn’t defined in the options object when the instance was created.
 ==========
 Vue.js in Action (Erik Hanchett, Ben Listwon)
 - Your Highlight on Location 900-901 | Added on Friday, July 19, 2019 7:02:28 PM
@@ -1362,4 +1347,44 @@ It Doesn’t Have to Be Crazy at Work (Fried, Jason)
 - Your Highlight on Location 469-470 | Added on Friday, May 1, 2020 11:57:54 AM
 
 Ask people where they go when they really need to get something done. One answer you’ll rarely hear: the office.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 543-545 | Added on Saturday, May 2, 2020 11:03:02 PM
+
+“But how do you know if someone’s working if you can’t see them?” Same answer as this question: “How do you know if someone’s working if you can see them?” You don’t. The only way to know if work is getting done is by looking at the actual work.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 709-710 | Added on Monday, May 4, 2020 1:07:39 AM
+
+the further away you are from the fruit, the lower it looks. Once you get up close, you see it’s quite a bit higher than you thought.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1032-1034 | Added on Tuesday, May 5, 2020 1:35:20 AM
+
+All chat all the time conditions you to believe everything’s worth discussing quickly right now, except that hardly anything is. Almost everything can and should wait until someone has had a chance to think it through and properly write it up.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1071-1072 | Added on Tuesday, May 5, 2020 1:36:19 AM
+
+It’s when you try to fix both scope and time that you have a recipe for dread, overwork, and exhaustion.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1122-1126 | Added on Tuesday, May 5, 2020 1:41:14 AM
+
+Normal comes on quick. First it starts as an outlier. Some behavior you don’t love, but tolerate. Then someone else follows suit, but either you miss it or you let it slide. Then people pile on—repeating what they’ve seen because no one stepped in to course correct. Then it’s too late. It’s become the culture. The new normal.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1134-1136 | Added on Tuesday, May 5, 2020 1:42:21 AM
+
+Culture is what culture does. Culture isn’t what you intend it to be. It’s not what you hope or aspire for it to be. It’s what you do. So do better.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1168-1169 | Added on Tuesday, May 5, 2020 1:45:37 AM
+
+big-bang releases bundle the risk from every component, so if one thing falls behind, the whole thing can get held up. Which it always does.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1189-1195 | Added on Tuesday, May 5, 2020 1:51:08 AM
+
+Jeff Bezos put it well in his 2017 letter to shareholders: I disagree and commit all the time. We recently greenlit a particular Amazon Studios original. I told the team my view: debatable whether it would be interesting enough, complicated to produce, the business terms aren’t that good, and we have lots of other opportunities. They had a completely different opinion and wanted to go ahead. I wrote back right away with “I disagree and commit and hope it becomes the most watched thing we’ve ever made.” Consider how much slower this decision cycle would have been if the team had actually had to convince me rather than simply get my commitment.
 ==========
