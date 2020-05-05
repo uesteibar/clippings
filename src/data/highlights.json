@@ -2392,18 +2392,6 @@
     "language": "en"
    },
    {
-    "id": "dfeebfa2236dd480f0b9ca866c7e163315692052",
-    "book": {
-     "title": "Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e ",
-     "author": "Sandi Metz",
-     "highlights": [],
-     "id": "df5c49350f9118d33c1c67869e904e467c0deeca"
-    },
-    "text": "situation by leaving the code better than you found",
-    "page": null,
-    "language": "unknown"
-   },
-   {
     "id": "da53fb6bcaefbdab751de53edc47189cd9fd5cd1",
     "book": {
      "title": "Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e ",
@@ -2472,18 +2460,6 @@
      "id": "df5c49350f9118d33c1c67869e904e467c0deeca"
     },
     "text": "A class that, if changed, will cause changes to ripple through the application will be under enormous pressure to never change. Ever. Under any circumstances whatsoever. Your application may be permanently handicapped by your reluctance to pay the price required to make a change to this class.",
-    "page": null,
-    "language": "en"
-   },
-   {
-    "id": "90365dac5ed6c9237c6c4a0d5d171539933d8850",
-    "book": {
-     "title": "Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e ",
-     "author": "Sandi Metz",
-     "highlights": [],
-     "id": "df5c49350f9118d33c1c67869e904e467c0deeca"
-    },
-    "text": "Design, therefore, must be concerned with the messages that pass between objects. It deals not only with what objects know (their responsibilities) and who they know (their dependencies) but also with how they talk to one another.  The",
     "page": null,
     "language": "en"
    },
@@ -2923,18 +2899,6 @@
      "id": "152fec087c2dec32aa46206f9acb36d054a94312"
     },
     "text": "If the CSS selector we provide resolves to more than one DOM element, Vue will mount the application to the first element that matches the selector.",
-    "page": null,
-    "language": "en"
-   },
-   {
-    "id": "eef477b1151fda17465074961de8281c9ddaaf26",
-    "book": {
-     "title": "Vue.js in Action ",
-     "author": "Erik Hanchett, Ben Listwon",
-     "highlights": [],
-     "id": "152fec087c2dec32aa46206f9acb36d054a94312"
-    },
-    "text": "[Vue warn]: Property or method \"propertyname\" is not defined . . . lets you know something wasn’t defined in the options object when the instance was created.",
     "page": null,
     "language": "en"
    },
@@ -3382,6 +3346,102 @@
      "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
     },
     "text": "Ask people where they go when they really need to get something done. One answer you’ll rarely hear: the office.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "62ed43237e56664859683e95d386db7ee997bbf9",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "“But how do you know if someone’s working if you can’t see them?” Same answer as this question: “How do you know if someone’s working if you can see them?” You don’t. The only way to know if work is getting done is by looking at the actual work.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "eacde0fb3405c633346ffc6a20badaa97ee6e6c5",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "the further away you are from the fruit, the lower it looks. Once you get up close, you see it’s quite a bit higher than you thought.",
+    "page": null,
+    "language": "unknown"
+   },
+   {
+    "id": "a43ab7039cdd511dae8a5c0cffc31a3d58bc1ded",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "All chat all the time conditions you to believe everything’s worth discussing quickly right now, except that hardly anything is. Almost everything can and should wait until someone has had a chance to think it through and properly write it up.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "c2576d981f28256f9aa02d8adbeca605705db673",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "It’s when you try to fix both scope and time that you have a recipe for dread, overwork, and exhaustion.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "1c6cc45131e12539ce5892e68b85d227b3d898a0",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "Normal comes on quick. First it starts as an outlier. Some behavior you don’t love, but tolerate. Then someone else follows suit, but either you miss it or you let it slide. Then people pile on—repeating what they’ve seen because no one stepped in to course correct. Then it’s too late. It’s become the culture. The new normal.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "b3015d9ef18aa5fccf7ffe078c77a2b898ad7ddb",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "Culture is what culture does. Culture isn’t what you intend it to be. It’s not what you hope or aspire for it to be. It’s what you do. So do better.",
+    "page": null,
+    "language": "unknown"
+   },
+   {
+    "id": "41ce51af65427f63232c585fef11246162bda583",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "big-bang releases bundle the risk from every component, so if one thing falls behind, the whole thing can get held up. Which it always does.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "cdba43cd68444c08122508e33e8adf24c0e6cd5b",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "Jeff Bezos put it well in his 2017 letter to shareholders: I disagree and commit all the time. We recently greenlit a particular Amazon Studios original. I told the team my view: debatable whether it would be interesting enough, complicated to produce, the business terms aren’t that good, and we have lots of other opportunities. They had a completely different opinion and wanted to go ahead. I wrote back right away with “I disagree and commit and hope it becomes the most watched thing we’ve ever made.” Consider how much slower this decision cycle would have been if the team had actually had to convince me rather than simply get my commitment.",
     "page": null,
     "language": "en"
    }
