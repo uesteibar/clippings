@@ -2992,6 +2992,114 @@
     "text": "we strive to not only take incremental steps towards our new application architecture, but we will also ensure that each step is easily reversible, reducing the risk of each incremental step.",
     "page": null,
     "language": "en"
+   },
+   {
+    "id": "5963fd96cd28f74cea7cabf3be46dfc71b4fdfb3",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Independent deployability is the idea that we can make a change to a microservice and deploy it into a production environment without having to utilize any other services. More importantly, it’s not just that we can do this; it’s that this is actually how you manage deployments in your system. It’s a discipline you practice for the bulk of your releases.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "cde69b9994e83fd3fa5aefdfb8717e2f320d3a10",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Our aspirations around our software have changed. We now group people in poly-skilled teams, to reduce hand-offs and silos. We want to ship software much more quickly than ever before. That is driving us to make different choices about how we organize our teams, and therefore in terms of how we break our systems apart.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "aa0f02df72ed807b64a73b9d9040c6ffc07ec406",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "If we want to make it easier to make changes, instead we need to change how we group code—we choose cohesion of business functionality, rather than technology.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "7379a3132e3017ebc1bacb4a17a20a21f1ebfc0c",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "If we want an architecture that makes it easier for us to more rapidly deploy new features, then leaving the UI as a monolithic blob can be a big mistake. We can, and should, look at breaking apart our user interfaces too,",
+    "page": null,
+    "language": "unknown"
+   },
+   {
+    "id": "0f561eba131476dc1fda03f5f34bc956c3e71197",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Working out how to properly evolve and manage a microservice architecture involves tackling a multitude of challenges related to distributed systems—challenges you may not have faced before. I think it’s much more useful to get your head around these issues as you encounter them, making use of a technology stack you are familiar with, and then consider whether changing your existing technology may help address those problems as you find them.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "6a5a91f26bd3c49b522c4b671b5a36d43c5bf549",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "we’re optimizing our microservice architecture around ease of making changes in business functionality—so we want the functionality grouped in such a way that we can make changes in as few places as possible.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "3b649be64a70122439921fc965d4d66f38562318",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "cohesion is this: “the code that changes together, stays together.”",
+    "page": null,
+    "language": "unknown"
+   },
+   {
+    "id": "5e8d616f64298714df3dc93a1b0bb7ec5a0f6d22",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "We want the module boundary to be stable, and it should hide those parts of the module implementation that we expect to change more often. The idea is that internal changes can be made safely as long as module compatibility is maintained.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "a4ee03d91d51ba726535603c1b18efe5d36f3063",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "use “outside-in” thinking when it comes to defining a service interface—drive the service interface by thinking of things from the point of the service consumers first, and then work out how to implement that service contract.",
+    "page": null,
+    "language": "en"
    }
   ],
   "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
@@ -3442,6 +3550,66 @@
      "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
     },
     "text": "Jeff Bezos put it well in his 2017 letter to shareholders: I disagree and commit all the time. We recently greenlit a particular Amazon Studios original. I told the team my view: debatable whether it would be interesting enough, complicated to produce, the business terms aren’t that good, and we have lots of other opportunities. They had a completely different opinion and wanted to go ahead. I wrote back right away with “I disagree and commit and hope it becomes the most watched thing we’ve ever made.” Consider how much slower this decision cycle would have been if the team had actually had to convince me rather than simply get my commitment.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "dce5d5b4388805b7ea4736f5fd215fd95e3870c2",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "The only way to get more done is to have less to do.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "6fd6af59fcf20234837e3497ef483a82c520229b",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "time isn’t something that can be managed. Time is time—it rolls along at the same pace regardless of how you try to wrestle with it. What you choose to spend it on is the only thing you have control over.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "61fea46cf8f6d89ceb82d0e2510e01274e555d4b",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "You can do big things with small teams, but it’s a whole hell of a lot harder to do small things with big teams.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "78fa88e04adb03573dddba9d0bdac1b824ad67c3",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "If you want to know the truth about what you’ve built, you have to ship it. You can test, you can brainstorm, you can argue, you can survey, but only shipping will tell you whether you’re going to sink or swim.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "263657652e7b3338aefbe776867125a78f58a1de",
+    "book": {
+     "title": "It Doesn’t Have to Be Crazy at Work ",
+     "author": "Fried, Jason",
+     "highlights": [],
+     "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+    },
+    "text": "When you deal with people who have trouble, you can either choose to take the token that says “It’s no big deal” or the token that says “It’s the end of the world.” Whichever token you pick, they’ll take the other.",
     "page": null,
     "language": "en"
    }

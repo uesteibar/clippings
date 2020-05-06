@@ -1388,3 +1388,73 @@ It Doesn’t Have to Be Crazy at Work (Fried, Jason)
 
 Jeff Bezos put it well in his 2017 letter to shareholders: I disagree and commit all the time. We recently greenlit a particular Amazon Studios original. I told the team my view: debatable whether it would be interesting enough, complicated to produce, the business terms aren’t that good, and we have lots of other opportunities. They had a completely different opinion and wanted to go ahead. I wrote back right away with “I disagree and commit and hope it becomes the most watched thing we’ve ever made.” Consider how much slower this decision cycle would have been if the team had actually had to convince me rather than simply get my commitment.
 ==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1342-1343 | Added on Tuesday, May 5, 2020 3:29:24 AM
+
+The only way to get more done is to have less to do.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1345-1347 | Added on Tuesday, May 5, 2020 3:30:02 AM
+
+time isn’t something that can be managed. Time is time—it rolls along at the same pace regardless of how you try to wrestle with it. What you choose to spend it on is the only thing you have control over.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1375-1375 | Added on Tuesday, May 5, 2020 3:31:55 AM
+
+You can do big things with small teams, but it’s a whole hell of a lot harder to do small things with big teams.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1495-1497 | Added on Tuesday, May 5, 2020 7:55:34 PM
+
+If you want to know the truth about what you’ve built, you have to ship it. You can test, you can brainstorm, you can argue, you can survey, but only shipping will tell you whether you’re going to sink or swim.
+==========
+It Doesn’t Have to Be Crazy at Work (Fried, Jason)
+- Your Highlight on Location 1617-1619 | Added on Tuesday, May 5, 2020 9:15:27 PM
+
+When you deal with people who have trouble, you can either choose to take the token that says “It’s no big deal” or the token that says “It’s the end of the world.” Whichever token you pick, they’ll take the other.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 350-353 | Added on Wednesday, May 6, 2020 1:08:34 AM
+
+Independent deployability is the idea that we can make a change to a microservice and deploy it into a production environment without having to utilize any other services. More importantly, it’s not just that we can do this; it’s that this is actually how you manage deployments in your system. It’s a discipline you practice for the bulk of your releases.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 397-399 | Added on Wednesday, May 6, 2020 1:22:10 AM
+
+Our aspirations around our software have changed. We now group people in poly-skilled teams, to reduce hand-offs and silos. We want to ship software much more quickly than ever before. That is driving us to make different choices about how we organize our teams, and therefore in terms of how we break our systems apart.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 403-404 | Added on Wednesday, May 6, 2020 1:22:46 AM
+
+If we want to make it easier to make changes, instead we need to change how we group code—we choose cohesion of business functionality, rather than technology.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 476-478 | Added on Wednesday, May 6, 2020 1:31:40 AM
+
+If we want an architecture that makes it easier for us to more rapidly deploy new features, then leaving the UI as a monolithic blob can be a big mistake. We can, and should, look at breaking apart our user interfaces too,
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 484-487 | Added on Wednesday, May 6, 2020 1:33:07 AM
+
+Working out how to properly evolve and manage a microservice architecture involves tackling a multitude of challenges related to distributed systems—challenges you may not have faced before. I think it’s much more useful to get your head around these issues as you encounter them, making use of a technology stack you are familiar with, and then consider whether changing your existing technology may help address those problems as you find them.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 669-670 | Added on Wednesday, May 6, 2020 12:49:17 PM
+
+we’re optimizing our microservice architecture around ease of making changes in business functionality—so we want the functionality grouped in such a way that we can make changes in as few places as possible.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 668-668 | Added on Wednesday, May 6, 2020 12:51:09 PM
+
+cohesion is this: “the code that changes together, stays together.”
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 689-690 | Added on Wednesday, May 6, 2020 12:52:23 PM
+
+We want the module boundary to be stable, and it should hide those parts of the module implementation that we expect to change more often. The idea is that internal changes can be made safely as long as module compatibility is maintained.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 733-735 | Added on Wednesday, May 6, 2020 12:58:37 PM
+
+use “outside-in” thinking when it comes to defining a service interface—drive the service interface by thinking of things from the point of the service consumers first, and then work out how to implement that service contract.
+==========
