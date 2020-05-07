@@ -1103,41 +1103,6 @@ Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
 
 The train wrecks of Demeter violations are clues that there are objects whose public interfaces are lacking. Listening to Demeter means paying attention to your point of view. If you shift to a message-based perspective, the messages you find will become public interfaces in the objects they lead you to discover. However, if you are bound by the shackles of existing domain objects, you’ll end up assembling their existing public interfaces into long message chains and thus will miss the opportunity to find and construct flexible public interfaces.
 ==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 823-825 | Added on Friday, July 19, 2019 7:00:29 PM
-
-At the heart of every Vue application, no matter how big or small, is the root Vue instance, Vue instance for short.
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 828-829 | Added on Friday, July 19, 2019 7:00:39 PM
-
-The Vue constructor accepts a single JavaScript object, known as the options object,
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 876-877 | Added on Friday, July 19, 2019 7:01:16 PM
-
-If the CSS selector we provide resolves to more than one DOM element, Vue will mount the application to the first element that matches the selector.
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 900-901 | Added on Friday, July 19, 2019 7:02:28 PM
-
-[Vue warn]: Property or method "propertyname" is not defined . . . lets you know something wasn’t defined in the options object when the instance was created.
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 1591-1592 | Added on Friday, July 19, 2019 11:24:27 PM
-
-computed property It might help to think
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 1592-1594 | Added on Friday, July 19, 2019 11:25:12 PM
-
-think of the properties in the data object as representing data we’d store in a database and computed properties as dynamic values that are used primarily within the context of our view.
-==========
-Vue.js in Action (Erik Hanchett, Ben Listwon)
-- Your Highlight on Location 2179-2180 | Added on Friday, July 19, 2019 11:47:25 PM
-
-The v-once directive renders an element or component once only. On any additional re-renders, the element or component will be treated as static content and skipped.
-==========
 Practical Object-Oriented Design: An Agile Primer Using Ruby, 2/e (Sandi Metz)
 - Your Highlight on Location 5498-5499 | Added on Wednesday, July 31, 2019 1:07:28 AM
 
