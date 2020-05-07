@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Heading from './Heading'
-import Highlights from './Highlights'
-import { getHighlights } from './data/highlights'
-import { BookHighlight } from './types'
+import Books from './Books'
+import { load } from './data/highlights'
 
 const Main = () => {
-  const [highlights, setHighlights] = useState<BookHighlight[]>([])
-
-  useEffect(() => { setHighlights(getHighlights()) }, [])
+  const books = load()
 
   return (
     <div>
       <Heading />
-      <Highlights highlights={highlights} />
+      <Books books={books} />
     </div>
   );
 }

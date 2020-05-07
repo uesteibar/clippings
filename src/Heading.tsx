@@ -58,7 +58,7 @@ const Heading = () => (
       </SubTitle>
       <Random>Click here to see a random highlight</Random>
       <SubTitle>
-        Otherwise, keep scrolling down.
+        Otherwise, keep scrolling down and pic a book.
       </SubTitle>
     </Container>
   </Background>
