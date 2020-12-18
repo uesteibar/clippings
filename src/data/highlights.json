@@ -1176,18 +1176,6 @@
     "language": "unknown"
    },
    {
-    "id": "cd6de78aae7c9a37c477115f904f3add034a0b4e",
-    "book": {
-     "title": "Practical Go: Real world advice for writing maintainable Go programs ",
-     "author": "The Pragmatic Programmer",
-     "highlights": [],
-     "id": "3bf5c678ac1d37109aed99393dd2a660c1eaf25e"
-    },
-    "text": "Short variable names work well when the distance between their declaration and last use is short. Long variable names need to justify themselves; the longer they are the more value they need to provide. Lengthy bureaucratic names carry a low amount of signal compared to their weight on the page. Don’t include the name of your type in the name of your variable. Constants should describe the value they hold, not how that value is used.",
-    "page": null,
-    "language": "en"
-   },
-   {
     "id": "fcd555674d21c60886f9f715c56af393decc7068",
     "book": {
      "title": "Practical Go: Real world advice for writing maintainable Go programs ",
@@ -3009,6 +2997,138 @@
     "text": "use “outside-in” thinking when it comes to defining a service interface—drive the service interface by thinking of things from the point of the service consumers first, and then work out how to implement that service contract.",
     "page": null,
     "language": "en"
+   },
+   {
+    "id": "ab03c8e6799ba37cafb957b937b61b7a3ba08234",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Think of your service contract with the outside world as a user interface. When designing a user interface, you ask the users what they want, and iterate on the design of this with your users. You should shape your service contract in the same way.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "bb099a45c9ae781adc6054aba8ca62c6e4ea6922",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Smaller releases make for less risk. There is less to go wrong. If something does go wrong, working out what went wrong and how to fix it is easier because we changed less.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "7f5235a9d74bb62dd2548d26cb02d00444c6a4d8",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Microservices are not the goal. You don’t “win” by having microservices. Adopting a microservice architecture should be a conscious decision, one based on rational decision-making. You should be thinking of migrating to a microservice architecture in order to achieve something that you can’t currently achieve with your existing system architecture.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "616e494e65eed321f46335c4b7eff0d44b8d8013",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Robustness is the ability to have a system that is able to react to expected variations.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "231c602a883396865b866f21e561c0493018c513",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Resilience is having an organization capable of adapting to things that haven’t been thought of,",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "697c4ca321a533aef9aba9653671ae4975513775",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "If the robustness of your application relies on human beings never making a mistake, you’re in for a rocky ride.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "2f26593a8f8bfc305e8ebefa4815ccf2298be005",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "microservices are a great way of solving the sorts of problems you’ll get once you have initial success as a startup. So focus initially on being a success!",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "830928959ecafb677f377bcfa081a9be5ca6095e",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "It’s important that you and the other people you need to bring on the journey with you have a shared understanding about what you’re trying to achieve. If you’re on the same page about that, then at least you know you are disagreeing only about how to get there. So it comes back to the goal again—if the other folks in the organization share the goal, they are much more likely to be onboard for making a change.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "84c8833b80aaa01910f0b6b9e9b68e67454e2edb",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "In the moments after a crisis has been dealt with, you have a brief moment in people’s consciousness where pushing for change can work. Wait too long, and the pain—and causes of that pain—will diminish.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "290bb249a52b371fc65d08568938f72c0f512bfc",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Being committed to a vision is important, but being overly committed to a specific strategy in the face of contrary evidence is dangerous, and can lead to significant sunk cost fallacy.",
+    "page": null,
+    "language": "en"
+   },
+   {
+    "id": "97f533152bedf294f0df8a34baef8b565ad8105e",
+    "book": {
+     "title": "Monolith to Microservices ",
+     "author": "Sam Newman",
+     "highlights": [],
+     "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
+    },
+    "text": "Don’t throw new technology into the mix for the sake of it. Bring it in to solve concrete problems you see. As you identify obstacles, bring in new technology to fix those problems. Don’t fall into the trap of spending a year defining The Perfect Microservice Platform only to find that it doesn’t actually solve the problems you have.",
+    "page": null,
+    "language": "en"
    }
   ],
   "id": "62b69470e533fed1df790b0c3b3ac47e26c2e838"
@@ -3524,5 +3644,143 @@
    }
   ],
   "id": "3fc458b31e258cdd9726f0aeede5f8817064d97a"
+ },
+ {
+  "title": "Aleación de ley (Nacidos de la bruma [Mistborn] 4) (Spanish Edition) ",
+  "author": "Sanderson, Brandon",
+  "highlights": [
+   {
+    "id": "2d33ff3074f0ad913273f942a61dbc675cd2cc1b",
+    "book": {
+     "title": "Aleación de ley (Nacidos de la bruma [Mistborn] 4) (Spanish Edition) ",
+     "author": "Sanderson, Brandon",
+     "highlights": [],
+     "id": "3d1bdd996e7ecab8e7c4cc2392919848d19c5ba0"
+    },
+    "text": "—Si encuentras un edificio sin ratas, hijo, entonces sabes que algo más peligroso las espantó.",
+    "page": null,
+    "language": "es"
+   }
+  ],
+  "id": "3d1bdd996e7ecab8e7c4cc2392919848d19c5ba0"
+ },
+ {
+  "title": "Sombras de identidad (Nacidos de la bruma [Mistborn] 5) (Spanish Edition) ",
+  "author": "Sanderson, Brandon",
+  "highlights": [
+   {
+    "id": "598bf5282468d336602188a3be55b1be3f46afba",
+    "book": {
+     "title": "Sombras de identidad (Nacidos de la bruma [Mistborn] 5) (Spanish Edition) ",
+     "author": "Sanderson, Brandon",
+     "highlights": [],
+     "id": "134eac523231769c2095273637f898f35d8fefc0"
+    },
+    "text": "Todo el mundo es una excepción que confirma alguna regla,",
+    "page": null,
+    "language": "es"
+   }
+  ],
+  "id": "134eac523231769c2095273637f898f35d8fefc0"
+ },
+ {
+  "title": "Brazales de Duelo (Nacidos de la bruma [Mistborn] 6) (Spanish Edition) ",
+  "author": "Sanderson, Brandon",
+  "highlights": [
+   {
+    "id": "79951373ce2cd4076d757847d5cb930f75ebd12a",
+    "book": {
+     "title": "Brazales de Duelo (Nacidos de la bruma [Mistborn] 6) (Spanish Edition) ",
+     "author": "Sanderson, Brandon",
+     "highlights": [],
+     "id": "8a0ff122d09965e43b30d0c1cdc34c89d91fb147"
+    },
+    "text": "«Se puede derrotar a cualquiera —decía Wayne siempre—, siempre y cuando no le permitas luchar como él quiere.»",
+    "page": null,
+    "language": "es"
+   }
+  ],
+  "id": "8a0ff122d09965e43b30d0c1cdc34c89d91fb147"
+ },
+ {
+  "title": "El guerrero a la sombra del cerezo (Spanish Edition) ",
+  "author": "Gil, David B.",
+  "highlights": [
+   {
+    "id": "d291e59fc3b70550565181dcb2e4a0cae107692d",
+    "book": {
+     "title": "El guerrero a la sombra del cerezo (Spanish Edition) ",
+     "author": "Gil, David B.",
+     "highlights": [],
+     "id": "d01155b4759aa60afd4ab068ccac4487b2d3d93f"
+    },
+    "text": "Cuando una piedra golpea la superficie de un estanque sereno, provoca ondas que llegan hasta la más lejana orilla.",
+    "page": null,
+    "language": "es"
+   },
+   {
+    "id": "4565432c80555b900c8718ea3ac7fceee2a858b0",
+    "book": {
+     "title": "El guerrero a la sombra del cerezo (Spanish Edition) ",
+     "author": "Gil, David B.",
+     "highlights": [],
+     "id": "d01155b4759aa60afd4ab068ccac4487b2d3d93f"
+    },
+    "text": "Los ríos bajan de las montañas hacia el mar, al igual que la vida de cada cual fluye en una sola dirección; intentar cambiar el curso de la propia naturaleza es inútil.",
+    "page": null,
+    "language": "es"
+   },
+   {
+    "id": "a1412ba731501ba5ef673873b274de2447ba945c",
+    "book": {
+     "title": "El guerrero a la sombra del cerezo (Spanish Edition) ",
+     "author": "Gil, David B.",
+     "highlights": [],
+     "id": "d01155b4759aa60afd4ab068ccac4487b2d3d93f"
+    },
+    "text": "es estúpido caminar por este mundo con miedo a equivocarse o lamentándonos de los fallos cometidos, pues ni siquiera Buda era infalible. El único error imperdonable es no intentar enmendar lo que se ha hecho mal».",
+    "page": null,
+    "language": "es"
+   }
+  ],
+  "id": "d01155b4759aa60afd4ab068ccac4487b2d3d93f"
+ },
+ {
+  "title": "Kafka en la orilla (Volumen independiente) (Spanish Edition) ",
+  "author": "Murakami, Haruki",
+  "highlights": [
+   {
+    "id": "d5e27e6263f1eb41693c714b122c4d54244929a0",
+    "book": {
+     "title": "Kafka en la orilla (Volumen independiente) (Spanish Edition) ",
+     "author": "Murakami, Haruki",
+     "highlights": [],
+     "id": "0955952825711dec9122f5c44e8cd105cb861499"
+    },
+    "text": "cuando nos enamoramos, todos buscamos en la persona amada una parte de nosotros que nos falta.",
+    "page": null,
+    "language": "es"
+   }
+  ],
+  "id": "0955952825711dec9122f5c44e8cd105cb861499"
+ },
+ {
+  "title": "Memorias de una Geisha (Spanish Edition) ",
+  "author": "Golden, Arthur",
+  "highlights": [
+   {
+    "id": "e50a895ad64f3733f02da8d0baf5855fdc7095c1",
+    "book": {
+     "title": "Memorias de una Geisha (Spanish Edition) ",
+     "author": "Golden, Arthur",
+     "highlights": [],
+     "id": "e894b297bd06587d2ee4a618cf636a4927bf085f"
+    },
+    "text": "cuando se tira un guijarro a un estanque, el agua sigue agitada todavía un rato después de que el guijarro se haya posado en el fondo.",
+    "page": null,
+    "language": "es"
+   }
+  ],
+  "id": "e894b297bd06587d2ee4a618cf636a4927bf085f"
  }
 ]

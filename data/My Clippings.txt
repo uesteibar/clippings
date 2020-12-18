@@ -484,11 +484,6 @@ Practical Go: Real world advice for writing maintainable Go programs (The Pragma
 A good name should describe the application of a variable or constant, not their contents.
 ==========
 Practical Go: Real world advice for writing maintainable Go programs (The Pragmatic Programmer)
-- Your Highlight on Location 83-87 | Added on Monday, March 25, 2019 12:52:28 PM
-
-Short variable names work well when the distance between their declaration and last use is short. Long variable names need to justify themselves; the longer they are the more value they need to provide. Lengthy bureaucratic names carry a low amount of signal compared to their weight on the page. Don’t include the name of your type in the name of your variable. Constants should describe the value they hold, not how that value is used.
-==========
-Practical Go: Real world advice for writing maintainable Go programs (The Pragmatic Programmer)
 - Your Highlight on Location 82-87 | Added on Monday, March 25, 2019 12:52:40 PM
 
 The greater the distance between a name’s declaration and its uses, the longer the name should be. — Andrew Gerrand [] From this we can draw some guidelines: Short variable names work well when the distance between their declaration and last use is short. Long variable names need to justify themselves; the longer they are the more value they need to provide. Lengthy bureaucratic names carry a low amount of signal compared to their weight on the page. Don’t include the name of your type in the name of your variable. Constants should describe the value they hold, not how that value is used.
@@ -1423,3 +1418,97 @@ Monolith to Microservices (Sam Newman)
 
 use “outside-in” thinking when it comes to defining a service interface—drive the service interface by thinking of things from the point of the service consumers first, and then work out how to implement that service contract.
 ==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 742-744 | Added on Friday, May 8, 2020 1:15:20 AM
+
+Think of your service contract with the outside world as a user interface. When designing a user interface, you ask the users what they want, and iterate on the design of this with your users. You should shape your service contract in the same way.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 777-778 | Added on Friday, May 8, 2020 1:18:43 AM
+
+Smaller releases make for less risk. There is less to go wrong. If something does go wrong, working out what went wrong and how to fix it is easier because we changed less.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 950-952 | Added on Friday, May 8, 2020 1:36:06 AM
+
+Microservices are not the goal. You don’t “win” by having microservices. Adopting a microservice architecture should be a conscious decision, one based on rational decision-making. You should be thinking of migrating to a microservice architecture in order to achieve something that you can’t currently achieve with your existing system architecture.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1087-1088 | Added on Monday, May 11, 2020 1:07:38 AM
+
+Robustness is the ability to have a system that is able to react to expected variations.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1088-1090 | Added on Monday, May 11, 2020 1:08:05 AM
+
+Resilience is having an organization capable of adapting to things that haven’t been thought of,
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1106-1106 | Added on Monday, May 11, 2020 1:09:43 AM
+
+If the robustness of your application relies on human beings never making a mistake, you’re in for a rocky ride.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1202-1203 | Added on Monday, May 11, 2020 1:18:57 AM
+
+microservices are a great way of solving the sorts of problems you’ll get once you have initial success as a startup. So focus initially on being a success!
+==========
+Aleación de ley (Nacidos de la bruma [Mistborn] 4) (Spanish Edition) (Sanderson, Brandon)
+- Your Highlight on Location 4022-4023 | Added on Thursday, May 21, 2020 1:35:58 AM
+
+—Si encuentras un edificio sin ratas, hijo, entonces sabes que algo más peligroso las espantó.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1269-1272 | Added on Friday, May 22, 2020 12:42:44 PM
+
+It’s important that you and the other people you need to bring on the journey with you have a shared understanding about what you’re trying to achieve. If you’re on the same page about that, then at least you know you are disagreeing only about how to get there. So it comes back to the goal again—if the other folks in the organization share the goal, they are much more likely to be onboard for making a change.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1295-1296 | Added on Friday, May 22, 2020 12:45:27 PM
+
+In the moments after a crisis has been dealt with, you have a brief moment in people’s consciousness where pushing for change can work. Wait too long, and the pain—and causes of that pain—will diminish.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1327-1328 | Added on Friday, May 22, 2020 12:51:29 PM
+
+Being committed to a vision is important, but being overly committed to a specific strategy in the face of contrary evidence is dangerous, and can lead to significant sunk cost fallacy.
+==========
+Monolith to Microservices (Sam Newman)
+- Your Highlight on Location 1361-1363 | Added on Friday, May 22, 2020 12:54:36 PM
+
+Don’t throw new technology into the mix for the sake of it. Bring it in to solve concrete problems you see. As you identify obstacles, bring in new technology to fix those problems. Don’t fall into the trap of spending a year defining The Perfect Microservice Platform only to find that it doesn’t actually solve the problems you have.
+==========
+Sombras de identidad (Nacidos de la bruma [Mistborn] 5) (Spanish Edition) (Sanderson, Brandon)
+- Your Highlight on Location 1921-1921 | Added on Tuesday, June 2, 2020 2:53:34 AM
+
+Todo el mundo es una excepción que confirma alguna regla,
+==========
+Brazales de Duelo (Nacidos de la bruma [Mistborn] 6) (Spanish Edition) (Sanderson, Brandon)
+- Your Highlight on Location 2139-2140 | Added on Thursday, June 25, 2020 3:07:48 AM
+
+«Se puede derrotar a cualquiera —decía Wayne siempre—, siempre y cuando no le permitas luchar como él quiere.»
+==========
+El guerrero a la sombra del cerezo (Spanish Edition) (Gil, David B.)
+- Your Highlight on page 10 | Location 94-95 | Added on Saturday, July 11, 2020 1:17:32 AM
+
+Cuando una piedra golpea la superficie de un estanque sereno, provoca ondas que llegan hasta la más lejana orilla.
+==========
+El guerrero a la sombra del cerezo (Spanish Edition) (Gil, David B.)
+- La subrayado en la página 279 | posición 4865-4866 | Añadido el miércoles, 29 de julio de 2020 2:24:44
+
+Los ríos bajan de las montañas hacia el mar, al igual que la vida de cada cual fluye en una sola dirección; intentar cambiar el curso de la propia naturaleza es inútil.
+==========
+El guerrero a la sombra del cerezo (Spanish Edition) (Gil, David B.)
+- La subrayado en la página 738 | posición 12891-12893 | Añadido el martes, 11 de agosto de 2020 16:42:27
+
+es estúpido caminar por este mundo con miedo a equivocarse o lamentándonos de los fallos cometidos, pues ni siquiera Buda era infalible. El único error imperdonable es no intentar enmendar lo que se ha hecho mal».
+==========
+Kafka en la orilla (Volumen independiente) (Spanish Edition) (Murakami, Haruki)
+- La subrayado en la posición 5930-5930 | Añadido el martes, 25 de agosto de 2020 2:59:16
+
+cuando nos enamoramos, todos buscamos en la persona amada una parte de nosotros que nos falta.
+==========
+Memorias de una Geisha (Spanish Edition) (Golden, Arthur)
+- La subrayado en la página 321 | posición 4950-4951 | Añadido el viernes, 2 de octubre de 2020 3:11:00
+
+cuando se tira un guijarro a un estanque, el agua sigue agitada todavía un rato después de que el guijarro se haya posado en el fondo.
